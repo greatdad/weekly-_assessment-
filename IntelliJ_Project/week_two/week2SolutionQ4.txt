@@ -1,0 +1,65 @@
+fun main(){
+/*Q4. Define 5 classes, let each class
+definition contain at least 5 instance
+variable let each class contain at least 1
+constructor.*/
+}
+class Menu {
+    var foodName: String = ""
+    var foodPrice: Int = 0
+    var foodAvail: Boolean = false
+    var foodId: Int = 0
+    var foodDelivery: String = ""
+
+    constructor(foodName: String) {
+        this.foodName = foodName
+    }
+}
+class TransportType {
+    var airways: String = ""
+    var waterways: String = ""
+    var subways: String = ""
+    var landways: String = ""
+    var submarine: String = ""
+
+    constructor(airways: String) {
+        this.airways = airways
+    }
+}
+
+class Product {
+    var productName: String = ""
+    var productWeight: Double = 0.0
+    var productId: Int = 0
+    var productPrice: Double = 0.0
+    var productStock: Boolean = true
+
+    constructor(productName: String) {
+        this.productName = productName
+    }
+}
+
+class Animal {
+    var name: String = ""
+    var age: Int = 0
+    var species: String = ""
+    var color: String = ""
+    var habitat: String = ""
+
+    constructor(name: String) {
+        this.name = name
+    }
+}
+
+class ClassOfComputer {
+    var generation: String = ""
+    var purpose: String = ""
+    var size: String = ""
+    var type: String = ""
+    var usage: String = ""
+
+    constructor(usage: String) {
+        this.usage = usage
+    }
+}
+

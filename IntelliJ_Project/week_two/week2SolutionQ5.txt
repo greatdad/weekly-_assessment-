@@ -1,0 +1,132 @@
+fun main() {
+    /*Assign values to the instance variables in
+ these classes and then print out the
+ values in the main function by accessing
+ the values, NB Use getters and setters*/
+        var myFood: Menu = Menu ("")
+        myFood.setMenu(("Fried Rise"))
+        var show: String = myFood.getMenu()
+        println(show)
+
+    var myTrans : TransportType = TransportType("")
+    myTrans.setTransportType(("Jet"))
+    var show1: String = myTrans.getTransportType()
+    println(show1)
+
+    var myProd : Product = Product("")
+    myProd.setProduct(("Television"))
+    var show2: String = myProd.getProduct()
+    println(show2)
+
+    var myAnimal : Animal = Animal("")
+    myAnimal.setAnimal(("He-Goat"))
+    var show3: String = myAnimal.getAnimal()
+    println(show3)
+
+    var myClass : ClassOfComputer = ClassOfComputer("")
+    myClass.setClassOfComputer(("Public"))
+    var show4: String = myClass.getClassOfComputer()
+    println(show4)
+}
+class Menu {
+    var foodName: String = ""
+    var foodPrice: Int = 0
+    var foodAvail: Boolean = false
+    var foodId: Int = 0
+    var foodDelivery: String = ""
+
+    constructor(foodName: String) {
+        this.foodName = foodName
+    }
+    //getters
+    fun getMenu(): String {
+        return this.foodName
+    }
+
+    fun setMenu(foodName: String) {
+        this.foodName = foodName
+    }
+
+
+}
+class TransportType {
+    var airways: String = ""
+    var waterways: String = ""
+    var subways: String = ""
+    var landways: String = ""
+    var submarine: String = ""
+
+    constructor(airways: String) {
+        this.airways = airways
+    }
+    //getters
+    fun getTransportType(): String {
+        return this.airways
+    }
+
+    fun setTransportType(airways: String) {
+        this.airways = airways
+    }
+
+}
+
+class Product {
+    var productName: String = ""
+    var productWeight: Double = 0.0
+    var productId: Int = 0
+    var productPrice: Double = 0.0
+    var productStock: Boolean = true
+
+    constructor(productName: String) {
+        this.productName = productName
+    }
+    //getters
+    fun getProduct(): String {
+        return this.productName
+    }
+
+    fun setProduct(productName: String) {
+        this.productName = productName
+    }
+
+}
+
+class Animal {
+    var name: String = ""
+    var age: Int = 0
+    var species: String = ""
+    var color: String = ""
+    var habitat: String = ""
+
+    constructor(species: String) {
+        this.species = species
+    }
+    //getters
+    fun getAnimal(): String {
+        return this.species
+    }
+
+    fun setAnimal(species: String) {
+        this.species = species
+    }
+}
+
+class ClassOfComputer {
+    var generation: String = ""
+    var purpose: String = ""
+    var size: String = ""
+    var type: String = ""
+    var usage: String = ""
+
+    constructor(usage: String) {
+        this.usage = usage
+    }
+    //getters
+    fun getClassOfComputer(): String {
+        return this.usage
+    }
+
+    fun setClassOfComputer(usage: String) {
+        this.usage = usage
+    }
+}

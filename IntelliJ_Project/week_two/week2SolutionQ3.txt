@@ -1,0 +1,16 @@
+fun main() {
+    //using only for loop for even and odd numbers
+    var numbers : Array<Int> = arrayOf(10,11,12,13,14,15,16,27,18,19,20)
+    var numbers1 : Array<Int> = arrayOf(20,21,22,23,24,25,26,27,28,29,30)
+    println("Even numbers between 10 and 20 are: ")
+    for (numb in numbers){
+        if (numb % 2 == 0){
+            println(numb)
+        }
+    }
+    println("Odd numbers between 20 and 30 are: ")
+        for (numba in numbers1){
+            if(numba % 2 !=0)
+                println(numba)
+        }
+}

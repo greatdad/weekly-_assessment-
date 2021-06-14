@@ -1,0 +1,14 @@
+fun main() {
+    println("Number between 1 and 100: ")
+    var initialNum: Int = 1
+    while (initialNum <= 100) {
+        println(initialNum)
+        initialNum = initialNum + 1
+    }
+    println("Number between 1 to 10 except 4 and 5")
+    for (num in 1..10) {
+        if (num == 4 || num == 5)
+        continue
+        println(num)
+    }
+}
