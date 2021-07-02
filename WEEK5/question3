@@ -1,0 +1,15 @@
+fun main(){
+    vowelRemvoval()
+
+}
+fun vowelRemvoval() {
+    var commonVowel = "a,e,i,o,i,A,E,I,O,U"
+    var inputVal : String = "Android Studio ClassB Facilitators are awesome!"
+    println("String whose vowel is to be remove is: $inputVal")
+    println()
+    for (i in 0 until commonVowel.length) {
+        val charToRemove = commonVowel[i] + ""
+        inputVal = inputVal.replace(charToRemove, "")
+    }
+    println("Inputed character after removing vowel is : $inputVal")
+}
