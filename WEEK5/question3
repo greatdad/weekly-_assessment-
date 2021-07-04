@@ -3,7 +3,7 @@ fun main(){
 
 }
 fun vowelRemvoval() {
-    var commonVowel = "a,e,i,o,i,A,E,I,O,U"
+    var commonVowel = "a,e,i,o,u,A,E,I,O,U"
     var inputVal : String = "Android Studio ClassB Facilitators are awesome!"
     println("String whose vowel is to be remove is: $inputVal")
     println()
