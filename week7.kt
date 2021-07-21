@@ -4,16 +4,16 @@ fun main(){
     ReverseDigit()
 }
 fun ReverseDigit() {
-    var num2 = 348597
-    var reversed = 0
+    var randomNum = 348597
+    var reversedNum = 0
 
-    while (num2 != 0){
-        val digit = num2 % 10
-        reversed = reversed * 10 + digit
-        num2 /= 10
+    while (randomNum != 0){
+        val digits = randomNum % 10
+        reversedNum = reversedNum * 10 + digits
+        randomNum /= 10
 
     }
-    val results : Array<Int> = arrayOf(reversed)
+    val results : Array<Int> = arrayOf(reversedNum)
     println(Arrays.toString(results))
 
 }
