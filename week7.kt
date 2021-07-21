@@ -1,10 +1,19 @@
+import java.util.*
+
 fun main(){
     ReverseDigit()
 }
 fun ReverseDigit() {
-    println("Result of Reversed digit is:")
-    val arrOfNum: Array<Int> = arrayOf(7,9,5,8,4,3)
-    for (i in arrOfNum.size - 1 downTo 0){
-        print(arrOfNum[i])
+    var num2 = 1234567
+    var reversed = 0
+
+    while (num2 != 0){
+        val digit = num2 % 10
+        reversed = reversed * 10 + digit
+        num2 /= 10
+
     }
+    val results : Array<Int> = arrayOf(reversed)
+    println(Arrays.toString(results))
+
 }
