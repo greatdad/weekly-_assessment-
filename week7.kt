@@ -4,7 +4,7 @@ fun main(){
     ReverseDigit()
 }
 fun ReverseDigit() {
-    var num2 = 1234567
+    var num2 = 795843
     var reversed = 0
 
     while (num2 != 0){
