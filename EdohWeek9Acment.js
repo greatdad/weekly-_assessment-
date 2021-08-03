@@ -1,21 +1,19 @@
-function diffArray (array1, array2) {
-   var a = [];
-   var diff = [];
+function diffArrays (array1, array2) {
+   var first = [];
+   var different = [];
    for (var i = 0; i <array1.length; i++) {
-        a[array1[i]] = true;
+        first[array1[i]] = true;
 }
 for  (var i = 0; i <array2.lenth; i++){
-      if (a[array2[i]]){
-          delete a[array2[i]];
+      if (first[array2[i]]){
+          delete first[array2[i]];
     }else{
-       a[array2[i]] = true;
+       first[array2[i]] = true;
     }
 }
-for (var k in a) {
-    diff.push(k);
+for (var k in first) {
+    different.push(k);
     }
-  return diff;
+  return different;
 }
-
-// usage:
-console.log(diffArray['grass','dirt','pink wool','dead shrub'],['grass','dirt','dead shrub']));
+console.log(diffArrays['gift','dirt','pink wool','dead shrub'],['gift','dirt','dead shrub']));
